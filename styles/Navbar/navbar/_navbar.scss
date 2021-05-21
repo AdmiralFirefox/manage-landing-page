@@ -1,0 +1,107 @@
+/* Mobile View */
+
+.app-bar {
+  position: absolute; //Either Fixed or Relative
+  width: 100%;
+  /* Change the background of the app-bar */
+  background: transparent;
+  padding: 1.45em;
+  // z-index: 100;
+}
+
+.app-bar-content {
+  display: flex;
+  align-items: center;
+  padding: 0.3em;
+
+  /* Web Title*/
+
+  img {
+    margin-top: 0.5em;
+  }
+}
+
+.app-bar-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hamburger Icon */
+
+.nav_ham {
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0em;
+  // box-shadow: 5px 1px 15px 1px rgba(0, 0, 0, 0.253);
+  position: relative;
+  z-index: 100;
+
+  &:hover {
+    color: hsl(12, 88%, 59%);
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+.nav_ham-active {
+  background: #fff;
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0em;
+  // box-shadow: 5px 1px 15px 1px rgba(0, 0, 0, 0.253);
+  position: relative;
+  z-index: 100;
+
+  &:hover {
+    color: hsl(12, 88%, 59%);
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+/* Desktop View  */
+
+.app-bar-desktop-wrapper {
+  position: absolute; //Either Fixed or Relative
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; //Space Between the Company Name and Navlinks
+  //Change App Bar background for desktop
+  background: transparent;
+  padding: 1.7em;
+}
+
+.desktop-web-name {
+  img {
+    margin-top: 0.5em;
+  }
+}
+
+.desktop-navlinks {
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    transition: color 0.25s ease-in-out;
+
+    &:hover {
+      color: hsl(0, 0%, 60%);
+    }
+  }
+
+  div {
+    margin-right: 0.65em; //Space Between Navlinks
+    margin-left: 0.65em; //Space Between Navlinks
+    margin-bottom: 0.5em; //Space Between Navlinks
+  }
+}
+
+// .desktop-button {
+//   font-family: "Be Vietnam", sans-serif;
+// }

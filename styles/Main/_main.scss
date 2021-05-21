@@ -1,0 +1,147 @@
+.main-wrapper {
+  width: 100%;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+
+  div:first-child {
+    width: min(75%, 25em);
+    text-align: center;
+
+    h1 {
+      margin-top: 0.7em;
+    }
+
+    p {
+      margin-top: 1.4em;
+    }
+
+    .main-button {
+      color: #fff;
+      background-color: hsl(12, 88%, 59%);
+      border-radius: 20px;
+      padding: 0.5em 0.9em;
+      font-weight: 700;
+      margin-top: 1.7em;
+
+      &:hover {
+        background-color: hsl(12, 88%, 70%);
+      }
+    }
+  }
+
+  div:nth-child(2) {
+    margin-top: 6em;
+    .illustration-img {
+      width: 73vw;
+    }
+
+    .tablet-pattern {
+      margin-top: 6em;
+      position: absolute;
+      z-index: -1;
+      top: -9em;
+      right: -5em;
+      width: 100vw;
+    }
+  }
+}
+
+@media (min-width: 25em) {
+  .main-content {
+    div:nth-child(2) {
+      .tablet-pattern {
+        position: absolute;
+        z-index: -1;
+        top: -16em;
+        right: -9em;
+        width: 110vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 31.25em) {
+  .main-content {
+    div:nth-child(2) {
+      .tablet-pattern {
+        position: absolute;
+        z-index: -1;
+        top: -18em;
+        right: -12em;
+        width: 110vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 37.5em) {
+  .main-content {
+    div:nth-child(2) {
+      .tablet-pattern {
+        position: absolute;
+        z-index: -1;
+        top: -23em;
+        right: -14.5em;
+        width: 110vw;
+      }
+    }
+  }
+}
+
+//Desktop View
+@media (min-width: 47.9375em) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    div:first-child {
+      width: min(80%, 20em);
+      text-align: left;
+      margin-top: 6em;
+
+      h1 {
+        font-size: clamp(1.2rem, 3.5vw, 2rem);
+        font-weight: 700;
+        margin-top: 0em;
+      }
+
+      p {
+        color: hsl(227, 12%, 61%);
+      }
+    }
+
+    div:nth-child(2) {
+      .illustration-img {
+        width: 43vw;
+      }
+
+      .tablet-pattern {
+        position: absolute;
+        z-index: -1;
+        top: -24em;
+        right: -16em;
+        width: 74vw;
+      }
+    }
+  }
+}
+
+@media (min-width: 62.5em) {
+  .main-content {
+    div:nth-child(2) {
+      .tablet-pattern {
+        position: absolute;
+        z-index: -1;
+        top: -24em;
+        right: -14em;
+        width: 67vw;
+      }
+    }
+  }
+}

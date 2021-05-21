@@ -1,0 +1,50 @@
+.carousel-wrapper {
+  width: 100%;
+}
+
+.carousel-position {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-content {
+  width: 75%;
+
+  h2 {
+    text-align: center;
+    font-size: clamp(1.7rem, 4vw, 2.5rem);
+    font-weight: 700;
+    margin-top: 2.5em;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: hsl(12, 88%, 59%) !important;
+  font-size: 1.5rem !important;
+}
+
+.slick-slide * {
+  outline: none !important;
+}
+
+.slick-dots li button:before {
+  color: hsl(12, 88%, 59%) !important;
+  font-size: 0.8rem !important;
+  margin-top: 1.3em;
+}
+
+@media (min-width: 43.8125em) {
+  .carousel-content {
+    width: 90%;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .carousel-content {
+    width: 135%;
+  }
+}

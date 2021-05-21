@@ -1,0 +1,115 @@
+.footer-two-wrapper {
+  width: 100%;
+}
+
+.footer-two-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  // background: hsl(228, 39%, 20%);
+  background: hsl(228, 39%, 5%);
+  padding: 3em 2.5em;
+
+  .footer-copyright {
+    color: hsl(227, 12%, 61%);
+    position: absolute;
+    bottom: 1.5em;
+  }
+
+  .logo-and-social-links {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    div:first-child {
+      img {
+        margin-top: 3em;
+        margin-bottom: 2em;
+      }
+    }
+
+    .footer-social-links {
+      display: flex;
+      color: #fff;
+      font-size: 1.5rem;
+      margin-top: 1.4em;
+
+      & > * {
+        margin-left: 0.35em;
+        margin-right: 0.35em;
+      }
+
+      & > * > * {
+        transition: color 0.25s ease-in-out;
+      }
+
+      & > * > *:hover {
+        color: hsl(12, 88%, 59%);
+      }
+    }
+  }
+
+  .footer-nav-links {
+    display: flex;
+    color: #fff;
+    line-height: 2em;
+    margin-top: 0em;
+    font-weight: 700;
+
+    & > * {
+      margin-left: 1.5em;
+      margin-right: 1.5em;
+    }
+
+    a {
+      transition: color 0.25s ease-in-out;
+    }
+
+    a:hover {
+      color: hsl(12, 88%, 59%);
+    }
+  }
+}
+
+@media (min-width: 52.5em) {
+  .footer-two-content {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .footer-copyright {
+      color: hsl(227, 12%, 61%);
+      position: absolute;
+      bottom: 2em;
+      right: 5em;
+    }  
+
+    .logo-and-social-links {
+      flex-direction: column;
+
+      div:first-child {
+        img {
+          margin-top: 0em;
+          margin-bottom: 0;
+        }
+      }
+
+      .footer-social-links {
+        display: flex;
+        margin-top: 1.5em;
+      }
+    }
+
+    .footer-nav-links {
+      margin-top: 0em;
+      line-height: 2.5em;
+
+      & > * {
+        margin-left: 2em;
+        margin-right: 2em;
+      }
+    }
+  }
+}

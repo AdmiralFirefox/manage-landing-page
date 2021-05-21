@@ -1,0 +1,39 @@
+.carousel-ui-wrapper {
+  width: 100%;
+}
+
+.carousel-ui-position {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-ui-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+
+  img {
+    width: 5em;
+    position: relative;
+    z-index: 2;
+    top: 1.3em;
+  }
+
+  #card-ui {
+    background: hsl(0, 0%, 98%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    box-shadow: none !important;
+
+    p {
+      color: hsl(227, 12%, 61%);
+      margin-top: 1.3em;
+    }
+  }
+}

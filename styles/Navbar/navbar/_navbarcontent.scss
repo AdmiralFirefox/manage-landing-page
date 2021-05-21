@@ -1,0 +1,91 @@
+.back-drop {
+  /* You can set the color with or none */
+  // background: rgba(0, 0, 0, 0.253);
+  background: transparent;
+  position: fixed;
+  height: 100%; /* The backdrop shadow when the sidebar is active*/
+  width: 100%;
+  z-index: 90;
+  transition: all 0.45s ease-in-out;
+}
+
+//Note: If this is hard to configure, copy the wrapper and content code from responsive sidebar
+.navbar-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 4.89em;
+  z-index: 99;
+  width: 100%;
+  transition: all 0.45s ease-in-out; /* Animation of sidebar in and out */
+}
+
+.navbar-content {
+  background: #fff; /* Background color of the sidebar */
+  position: absolute;
+  width: 100%; /* How long your sidebar you want */
+  top: 0;
+  // height: min(70vh, 21em);
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+  overflow: auto;
+}
+
+.nav_components {
+  display: flex;
+  justify-content: center; /* For Nav Links excluding the dropdowns */
+  align-items: center;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    justify-content: center; /* Determines the position of your nav links */
+    align-items: center;
+    line-height: 4rem;
+    transition: background-color 0.6s ease;
+    user-select: none;
+  }
+
+  a:hover {
+    background: hsl(12, 88%, 59%);
+    color: #fff;
+  }
+}
+
+/* Button */
+
+.mobile_button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+
+  a:hover {
+    background: none;
+  }
+}
+
+.mobile_button {
+  background: none;
+  border: 3px solid black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3em;
+  border-radius: 10px;
+  transition: background-color 0.6s ease;
+  /* Adjust the with of the button */
+  //  width: 250px;
+
+  &:focus {
+    outline: none !important;
+  }
+
+  &:hover {
+    background: #555;
+    color: white;
+  }
+}

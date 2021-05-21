@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap");
+/* Mobile View */
+.app-bar {
+  position: absolute;
+  width: 100%;
+  /* Change the background of the app-bar */
+  background: transparent;
+  padding: 1.45em;
+}
+
+.app-bar-content {
+  display: flex;
+  align-items: center;
+  padding: 0.3em;
+  /* Web Title*/
+}
+.app-bar-content img {
+  margin-top: 0.5em;
+}
+
+.app-bar-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hamburger Icon */
+.nav_ham {
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0em;
+  position: relative;
+  z-index: 100;
+}
+.nav_ham:hover {
+  color: #f25f3a;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav_ham-active {
+  background: #fff;
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0em;
+  position: relative;
+  z-index: 100;
+}
+.nav_ham-active:hover {
+  color: #f25f3a;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Desktop View  */
+.app-bar-desktop-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: transparent;
+  padding: 1.7em;
+}
+
+.desktop-web-name img {
+  margin-top: 0.5em;
+}
+
+.desktop-navlinks {
+  display: flex;
+  align-items: center;
+}
+.desktop-navlinks a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  transition: color 0.25s ease-in-out;
+}
+.desktop-navlinks a:hover {
+  color: #999999;
+}
+.desktop-navlinks div {
+  margin-right: 0.65em;
+  margin-left: 0.65em;
+  margin-bottom: 0.5em;
+}
+
+.back-drop {
+  /* You can set the color with or none */
+  background: transparent;
+  position: fixed;
+  height: 100%;
+  /* The backdrop shadow when the sidebar is active*/
+  width: 100%;
+  z-index: 90;
+  transition: all 0.45s ease-in-out;
+}
+
+.navbar-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 4.89em;
+  z-index: 99;
+  width: 100%;
+  transition: all 0.45s ease-in-out;
+  /* Animation of sidebar in and out */
+}
+
+.navbar-content {
+  background: #fff;
+  /* Background color of the sidebar */
+  position: absolute;
+  width: 100%;
+  /* How long your sidebar you want */
+  top: 0;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+  overflow: auto;
+}
+
+.nav_components {
+  display: flex;
+  justify-content: center;
+  /* For Nav Links excluding the dropdowns */
+  align-items: center;
+  flex-direction: column;
+}
+.nav_components a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* Determines the position of your nav links */
+  align-items: center;
+  line-height: 4rem;
+  transition: background-color 0.6s ease;
+  user-select: none;
+}
+.nav_components a:hover {
+  background: #f25f3a;
+  color: #fff;
+}
+
+/* Button */
+.mobile_button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+.mobile_button_wrapper a:hover {
+  background: none;
+}
+
+.mobile_button {
+  background: none;
+  border: 3px solid black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3em;
+  border-radius: 10px;
+  transition: background-color 0.6s ease;
+  /* Adjust the with of the button */
+}
+.mobile_button:focus {
+  outline: none !important;
+}
+.mobile_button:hover {
+  background: #555;
+  color: white;
+}
+
+.carousel-wrapper {
+  width: 100%;
+}
+
+.carousel-position {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-content {
+  width: 75%;
+}
+.carousel-content h2 {
+  text-align: center;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-top: 2.5em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #f25f3a !important;
+  font-size: 1.5rem !important;
+}
+
+.slick-slide * {
+  outline: none !important;
+}
+
+.slick-dots li button:before {
+  color: #f25f3a !important;
+  font-size: 0.8rem !important;
+  margin-top: 1.3em;
+}
+
+@media (min-width: 43.8125em) {
+  .carousel-content {
+    width: 90%;
+  }
+}
+@media (min-width: 62.5em) {
+  .carousel-content {
+    width: 135%;
+  }
+}
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam", sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s;
+  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.5) inset !important;
+  -webkit-text-fill-color: #02010a !important;
+}
+
+.scroll-to-up {
+  position: fixed;
+  bottom: 1em;
+  right: 0.7em;
+  color: #601806;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-to-up-active {
+  position: fixed;
+  bottom: 1em;
+  right: 0.7em;
+  color: #601806;
+  font-size: 3rem;
+  cursor: pointer;
+}
+
+.scroll-to-up-active {
+  position: fixed;
+  bottom: 1.3em;
+  right: 0.7em;
+  color: #601806;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+.scroll-to-up-active:hover {
+  color: #c0300c;
+}
+
+@media (min-width: 52.5em) {
+  .scroll-to-up-active {
+    position: fixed;
+    bottom: 1em;
+    right: 0.7em;
+    color: #601806;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=globals.css.map */
